@@ -67,7 +67,7 @@ class RenderTemplate
     constructor()
     {
         this.cardMovie = `
-            <div class="col-3 mt-5">
+        <div class="col-3 mt-5">
                 <div class="card w-90 mx-auto">
                     <img src="$image" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -79,6 +79,7 @@ class RenderTemplate
             </div>
         `
     }
+
     renderAll(context)
     {
         for (let x=0; x < context.length; x++)
@@ -98,5 +99,33 @@ class RenderTemplate
             document.getElementById("app")
                 .innerHTML += template
         }
+    }
+
+    renderShow(context)
+    {
+        
+        let movieContext = new MovieListDTO(
+            context.title, 
+            context.description,
+            context.image
+        )
+        // Описание шаблона
+        let template = this.cardMovie
+            .replace("$image", movieContext.image)
+            .replace("$description", movieContext.description)
+            .replace("$title", movieContext.title)
+        // Рендер на страницу
+        document.getElementById("app")
+            .innerHTML += template 
+    }
+
+    renderGenre(context)
+    {
+
+    }
+
+    renderTop(content)
+    {
+        
     }
 }
