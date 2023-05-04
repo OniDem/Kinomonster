@@ -2,47 +2,56 @@ const data = [
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Ужасы"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Комедия"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Ужасы"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Ужасы"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Комедия"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Мелодрама"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Мелодрама"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Мелодрама"
     },
     {
         title: "Вызов",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        image: "img/vyzov_2.jpg"
+        image: "img/vyzov_2.jpg",
+        genre: "Мелодрама"
     }
 ]
 
@@ -51,12 +60,14 @@ class MovieListDTO
     title;
     description;
     image;
+    genre;
 
-    constructor(title, description, image)
+    constructor(title, description, image, genre)
     {
         this.title = title;
         this.description = description;
         this.image = image;
+        this.genre = genre;
     }
 }
 
